@@ -11,7 +11,7 @@ def summon_captain_planet(powers)
 end
 
 def long_planeteer_calls(powers)
-  powers.all? { |power| power.size > 4 }
+  powers.any? { |power| power.size > 4 }
 end
 
 def find_the_cheese# code an argument here
