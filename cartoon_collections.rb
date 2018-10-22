@@ -14,7 +14,13 @@ def long_planeteer_calls(powers)
   powers.any? { |power| power.size > 4 }
 end
 
-def find_the_cheese(cheese)
-  # the array below is here to help
+def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese_indices = []
+  cheese_types.each do |cheese|
+    if ingredients.include?(cheese)
+      cheese_indices << ingredients.index(cheese)
+    end
+  end
+  cheese_indices.min
 end
