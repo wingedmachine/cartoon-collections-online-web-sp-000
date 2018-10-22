@@ -5,7 +5,9 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(powers)
-  powers
+  powers.map do |power|
+    power = power.shift.upcase + power + "!"
+  end
 end
 
 def long_planeteer_calls# code an argument here
