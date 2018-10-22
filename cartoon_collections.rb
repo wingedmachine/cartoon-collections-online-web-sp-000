@@ -22,5 +22,5 @@ def find_the_cheese(ingredients)
       cheese_indices << ingredients.index(cheese)
     end
   end
-  cheese_indices.min
+  ingredients[cheese_indices.min]
 end
