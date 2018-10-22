@@ -22,5 +22,5 @@ def find_the_cheese(ingredients)
       cheese_indices << ingredients.index(cheese)
     end
   end
-  ingredients[cheese_indices.min]
+  cheese_indices.size > 0 ? ingredients[cheese_indices.min] : nil
 end
